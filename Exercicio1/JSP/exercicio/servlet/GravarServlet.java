@@ -1,19 +1,24 @@
 package exercicio.servlet;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
-
-public class FormularioServlet extends HttpServlet {
+public class GravarServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-    
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		request.getRequestDispatcher("/Exercicio1/formulario.jsp").forward(request, response);
+		String chave = request.getParameter("chave");
+		String valor = request.getParameter("valor");
+		
+		
+		getServletContext().setAttribute(chave, valor);
+		
+		response.sendRedirect("/web/Lista");
 	}
 
 }

@@ -1,3 +1,5 @@
+<%@page import="java.util.TreeMap"%>
+<%@page import="java.util.Map"%>
 <%@page import="java.util.Set"%>
 <%@page import="java.io.InputStream"%>
 <%@page import="java.util.Properties"%>
@@ -12,18 +14,14 @@
 <body>
 	
 	<%!
-		Properties props = new Properties();
-		Set keys;
+		Map<String, Object> map;
 	%>
 	
 	<%
-		InputStream is = application.getResourceAsStream("/WEB-INF/props.txt");
-		props.load(is);
-		is.close();
-		keys = props.keySet();
+		map = (TreeMap<String, Object>) request.getAttribute("atributos");
 	%>
 	
-	
+	<a href="/web/Exercicio1/formulario.jsp">Novo atributo</a><br>
 	<table border="1" width="100%">
 		<thead>
 			<tr align="center">
@@ -32,10 +30,10 @@
 			</tr>
 		</thead>
 		<tbody>
-		<% for (Object k : keys) { %>
+		<% for (Map.Entry<String, Object> entry : map.entrySet()) { %>
 			<tr align="center">
-				<td><%=k %></td>
-				<td><%=props.getProperty((String) k) %></td>
+				<td><%=entry.getKey() %></td>
+				<td><%=entry.getValue() %></td>
 			</tr>
 			<% } %>
 		</tbody>
