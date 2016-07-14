@@ -9,24 +9,30 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-
   <servlet>
     <servlet-name>Lista</servlet-name>
     <servlet-class>exercicio.servlet.ListaServlet</servlet-class>
   </servlet>
-  
   <servlet>
     <servlet-name>Gravar</servlet-name>
     <servlet-class>exercicio.servlet.GravarServlet</servlet-class>
   </servlet>
+  <servlet>
+	<servlet-name>Processar</servlet-name>
+	<servlet-class>exercicio.servlet.ProcessarServlet</servlet-class>  	
+  </servlet>
+  
   
   <servlet-mapping>
     <servlet-name>Lista</servlet-name>
     <url-pattern>/Lista</url-pattern>
   </servlet-mapping>
-  
   <servlet-mapping>
     <servlet-name>Gravar</servlet-name>
     <url-pattern>/Gravar</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Processar</servlet-name>
+  	<url-pattern>/Processar</url-pattern>
   </servlet-mapping>
 </web-app>

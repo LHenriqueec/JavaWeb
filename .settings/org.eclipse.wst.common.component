@@ -2,6 +2,7 @@
     <wb-module deploy-name="JavaWeb">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/Exercicio1/JSP"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Exercicio1/Session"/>
         <property name="context-root" value="web"/>
         <property name="java-output-path" value="/JavaWeb/build/classes"/>
     </wb-module>
