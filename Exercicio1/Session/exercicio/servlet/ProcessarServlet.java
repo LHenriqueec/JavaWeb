@@ -21,23 +21,20 @@ public class ProcessarServlet extends HttpServlet {
 		
 		if(usuario == null) {
 			usuario = new Usuario();
-			request.setAttribute("usuario", usuario);
+			session.setAttribute("usuario", usuario);
 		}
 		
 		
 		if (request.getParameter("email") != null) {
 			usuario.setEmail(request.getParameter("email"));
-			session.setAttribute("usuario", usuario);
 			request.getRequestDispatcher("/Exercicio1/Session/nome.jsp").forward(request, response);;
 		
 		} else if (request.getParameter("nome") != null) {
 			usuario.setNome(request.getParameter("nome"));
-			session.setAttribute("usuario", usuario);
 			request.getRequestDispatcher("/Exercicio1/Session/telefone.jsp").forward(request, response);
 			
 		} else if (request.getParameter("telefone") != null) {
 			usuario.setTelefone(request.getParameter("telefone"));
-			session.setAttribute("usuario", usuario);
 			request.getRequestDispatcher("/Exercicio1/Session/lista.jsp").forward(request, response);
 		}
 	}
