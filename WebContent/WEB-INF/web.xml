@@ -18,10 +18,13 @@
     <servlet-class>exercicio.servlet.GravarServlet</servlet-class>
   </servlet>
   <servlet>
-	<servlet-name>Processar</servlet-name>
-	<servlet-class>exercicio.servlet.ProcessarServlet</servlet-class>  	
+    <servlet-name>Processar</servlet-name>
+    <servlet-class>exercicio.servlet.ProcessarServlet</servlet-class>
   </servlet>
-  
+  <servlet>
+  	<servlet-name>Lista_2</servlet-name>
+  	<servlet-class>exercicio2.servlet.ListaServlet</servlet-class>
+  </servlet>
   
   <servlet-mapping>
     <servlet-name>Lista</servlet-name>
@@ -32,7 +35,20 @@
     <url-pattern>/Gravar</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-  	<servlet-name>Processar</servlet-name>
-  	<url-pattern>/Processar</url-pattern>
+    <servlet-name>Processar</servlet-name>
+    <url-pattern>/Processar</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Lista_2</servlet-name>
+  	<url-pattern>/Lista2</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  
+  
 </web-app>
