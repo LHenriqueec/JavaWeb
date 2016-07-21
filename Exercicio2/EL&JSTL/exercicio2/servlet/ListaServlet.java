@@ -23,7 +23,6 @@ public class ListaServlet extends HttpServlet {
 			Object valor = request.getServletContext().getAttribute(chave);
 			map.put(chave, valor);
 		}
-
 		request.setAttribute("parametros", map.entrySet());
 		
 		request.getRequestDispatcher("/Exercicio2/lista.jsp").forward(request, response);

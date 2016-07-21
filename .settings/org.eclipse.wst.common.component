@@ -6,6 +6,7 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/Exercicio1/Session"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/Exercicio2/EL&amp;JSTL"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Exercicio2/EL&amp;JSTL2"/>
         <property name="java-output-path" value="/JavaWeb/build/classes"/>
         <property name="context-root" value="JavaWeb"/>
     </wb-module>

@@ -9,6 +9,8 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+<!-- Configuração dos Servlets -->
   <servlet>
     <servlet-name>Lista</servlet-name>
     <servlet-class>exercicio.servlet.ListaServlet</servlet-class>
@@ -22,10 +24,19 @@
     <servlet-class>exercicio.servlet.ProcessarServlet</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>Lista_2</servlet-name>
-  	<servlet-class>exercicio2.servlet.ListaServlet</servlet-class>
+    <servlet-name>Lista_2</servlet-name>
+    <servlet-class>exercicio2.servlet.ListaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Gravar2</servlet-name>
+    <servlet-class>exercicio2.servlet.GravarServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Processar2</servlet-name>
+  	<servlet-class>exercicio2.servlet.ProcessarServlet</servlet-class>
   </servlet>
   
+<!--   Mapeando os Servlets -->
   <servlet-mapping>
     <servlet-name>Lista</servlet-name>
     <url-pattern>/Lista</url-pattern>
@@ -39,16 +50,15 @@
     <url-pattern>/Processar</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-  	<servlet-name>Lista_2</servlet-name>
-  	<url-pattern>/Lista2</url-pattern>
+    <servlet-name>Lista_2</servlet-name>
+    <url-pattern>/Lista2</url-pattern>
   </servlet-mapping>
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  <servlet-mapping>
+    <servlet-name>Gravar2</servlet-name>
+    <url-pattern>/Gravar2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Processar2</servlet-name>
+  	<url-pattern>/Processar2</url-pattern>
+  </servlet-mapping>
 </web-app>

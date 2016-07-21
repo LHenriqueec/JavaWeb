@@ -10,7 +10,11 @@
 <title>Lista Exercicio 2 - EL e JSTL</title>
 </head>
 <body>
-
+	
+	<c:url var="novo" value="Exercicio2/cadastrar.jsp" />
+	
+	<a href="${novo}">Criar Novo Parametro</a>
+	
 	<table border="1" width="100%">
 		<thead>
 			<tr>
