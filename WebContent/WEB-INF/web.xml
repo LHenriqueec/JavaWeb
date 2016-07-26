@@ -2,15 +2,10 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
   <display-name>JavaWeb</display-name>
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
     <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
-<!-- Configuração dos Servlets -->
+  <!-- Exercicio 1: Trabalhando com JSP e Servleet -->
   <servlet>
     <servlet-name>Lista</servlet-name>
     <servlet-class>exercicio.servlet.ListaServlet</servlet-class>
@@ -23,20 +18,6 @@
     <servlet-name>Processar</servlet-name>
     <servlet-class>exercicio.servlet.ProcessarServlet</servlet-class>
   </servlet>
-  <servlet>
-    <servlet-name>Lista_2</servlet-name>
-    <servlet-class>exercicio2.servlet.ListaServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>Gravar2</servlet-name>
-    <servlet-class>exercicio2.servlet.GravarServlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<servlet-name>Processar2</servlet-name>
-  	<servlet-class>exercicio2.servlet.ProcessarServlet</servlet-class>
-  </servlet>
-  
-<!--   Mapeando os Servlets -->
   <servlet-mapping>
     <servlet-name>Lista</servlet-name>
     <url-pattern>/Lista</url-pattern>
@@ -49,6 +30,20 @@
     <servlet-name>Processar</servlet-name>
     <url-pattern>/Processar</url-pattern>
   </servlet-mapping>
+  
+  <!-- Exercicio1: Utilizando Session -->
+  <servlet>
+    <servlet-name>Lista_2</servlet-name>
+    <servlet-class>exercicio2.servlet.ListaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Gravar2</servlet-name>
+    <servlet-class>exercicio2.servlet.GravarServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Processar2</servlet-name>
+    <servlet-class>exercicio2.servlet.ProcessarServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
     <servlet-name>Lista_2</servlet-name>
     <url-pattern>/Lista2</url-pattern>
@@ -58,7 +53,27 @@
     <url-pattern>/Gravar2</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-  	<servlet-name>Processar2</servlet-name>
-  	<url-pattern>/Processar2</url-pattern>
+    <servlet-name>Processar2</servlet-name>
+    <url-pattern>/Processar2</url-pattern>
   </servlet-mapping>
+  
+  <!-- Exercicio3: Utilizando Filters -->
+  <filter>
+  	<display-name>MaitenanceFilter</display-name>
+  	<filter-name>MaitenanceFilter</filter-name>
+  	<filter-class>filter.MaitenanceFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>MaitenanceFilter</filter-name>
+  	<url-pattern>/Exercicio3/*</url-pattern>
+  </filter-mapping>
 </web-app>
+
+
+
+
+
+
+
+
+

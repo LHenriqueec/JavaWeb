@@ -29,7 +29,7 @@ public class ListaServlet extends HttpServlet {
 		}
 		
 		request.setAttribute("atributos", map);
-		request.getRequestDispatcher("/Exercicio1/index.jsp").forward(request, response);
+		request.getRequestDispatcher("/Exercicio1/JSP/index.jsp").forward(request, response);
 	}
 
 }

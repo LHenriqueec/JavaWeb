@@ -21,7 +21,11 @@
 		map = (TreeMap<String, Object>) request.getAttribute("atributos");
 	%>
 	
-	<a href="/web/Exercicio1/formulario.jsp">Novo atributo</a><br>
+	<div align="right">
+		<a href="/web">Iniciar</a>
+	</div>
+	
+	<a href="/web/Exercicio1/JSP/formulario.jsp">Novo atributo</a><br>
 	<table border="1" width="100%">
 		<thead>
 			<tr align="center">
