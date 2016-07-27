@@ -10,6 +10,7 @@
 	<classpathentry kind="src" path="Exercicio2/EL&amp;JSTL"/>
 	<classpathentry kind="src" path="Exercicio2/EL&amp;JSTL2"/>
 	<classpathentry kind="src" path="Exercicio3/Filters"/>
+	<classpathentry kind="src" path="Exercicio3/Filter&amp;Session"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>

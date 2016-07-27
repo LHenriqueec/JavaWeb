@@ -4,8 +4,6 @@
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
-  
-  <!-- Exercicio 1: Trabalhando com JSP e Servleet -->
   <servlet>
     <servlet-name>Lista</servlet-name>
     <servlet-class>exercicio.servlet.ListaServlet</servlet-class>
@@ -30,8 +28,6 @@
     <servlet-name>Processar</servlet-name>
     <url-pattern>/Processar</url-pattern>
   </servlet-mapping>
-  
-  <!-- Exercicio1: Utilizando Session -->
   <servlet>
     <servlet-name>Lista_2</servlet-name>
     <servlet-class>exercicio2.servlet.ListaServlet</servlet-class>
@@ -56,18 +52,38 @@
     <servlet-name>Processar2</servlet-name>
     <url-pattern>/Processar2</url-pattern>
   </servlet-mapping>
-  
-  <!-- Exercicio3: Utilizando Filters -->
   <filter>
-  	<display-name>MaitenanceFilter</display-name>
-  	<filter-name>MaitenanceFilter</filter-name>
-  	<filter-class>filter.MaitenanceFilter</filter-class>
+    <display-name>MaitenanceFilter</display-name>
+    <filter-name>MaitenanceFilter</filter-name>
+    <filter-class>filter.MaitenanceFilter</filter-class>
   </filter>
   <filter-mapping>
-  	<filter-name>MaitenanceFilter</filter-name>
-  	<url-pattern>/Exercicio3/*</url-pattern>
+    <filter-name>MaitenanceFilter</filter-name>
+    <url-pattern>/Exercicio3/*</url-pattern>
+  </filter-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>Processa_Session</servlet-name>
+  	<servlet-class>servlet.ProcessarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Processa_Session</servlet-name>
+  	<url-pattern>/ProcessaSession</url-pattern>
+  </servlet-mapping>
+  <filter>
+  	<filter-name>Log_Session</filter-name>
+  	<filter-class>filter.ProcessarFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>Log_Session</filter-name>
+  	<url-pattern>/Exercicio3/formulario.jsp</url-pattern>
   </filter-mapping>
 </web-app>
+
+
+
+
 
 
 
