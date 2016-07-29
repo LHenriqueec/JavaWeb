@@ -9,6 +9,7 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/Exercicio2/EL&amp;JSTL2"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/Exercicio3/Filters"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/Exercicio3/Filter&amp;Session"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Exercicio4/Listner"/>
         <property name="java-output-path" value="/JavaWeb/build/classes"/>
         <property name="context-root" value="web"/>
     </wb-module>
