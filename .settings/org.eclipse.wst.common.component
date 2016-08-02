@@ -10,6 +10,7 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/Exercicio3/Filters"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/Exercicio3/Filter&amp;Session"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/Exercicio4/Listner"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Exercicio5/Hibernate"/>
         <property name="java-output-path" value="/JavaWeb/build/classes"/>
         <property name="context-root" value="web"/>
     </wb-module>
