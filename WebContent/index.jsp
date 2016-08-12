@@ -15,6 +15,7 @@
 <c:url var="Exercicio1_Session" value="Exercicio1/Session/email.jsp" />
 <c:url var="Exercicio2_EL_JSTL" value="Lista2" />
 <c:url var="Exercicio2_EL_JSTL2" value="Exercicio2/email.jsp" />
+<c:url var="Exercicio5_Hibernate" value="Exercicio5/index.jsp" />
 
 <h1 align="center">ESCOLHA UM EXERCÍCIO</h1>
 
@@ -28,5 +29,8 @@
 	<br>
 	<br>
 	<a href="${Exercicio2_EL_JSTL2}">Trabalhando com Session, EL e JSTL</a>
+	<br>
+	<br>
+	<a href="${Exercicio5_Hibernate}">Projeto com Hibernate</a>
 </body>
 </html>

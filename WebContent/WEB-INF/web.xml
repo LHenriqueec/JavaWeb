@@ -86,6 +86,20 @@
     <url-pattern>/Test</url-pattern>
   </servlet-mapping>
   <listener>
-  	<listener-class>exercicio4.listner.ListnerTest</listener-class>
+    <listener-class>exercicio4.listner.ListnerTest</listener-class>
   </listener>
+
+	<servlet>
+		<servlet-name>ControllerServlet</servlet-name>
+		<servlet-class>controller.ControllerServlet</servlet-class>
+	</servlet>  
+	<servlet-mapping>
+		<servlet-name>ControllerServlet</servlet-name>
+		<url-pattern>*.action</url-pattern>
+	</servlet-mapping>
 </web-app>
+
+
+
+
+
