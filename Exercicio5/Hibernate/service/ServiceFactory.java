@@ -18,4 +18,12 @@ public class ServiceFactory {
 	public CargoService getCargoService() {
 		return new CargoService();
 	}
+	
+	public CandidatoService getCandidatoService() {
+		return new CandidatoService();
+	}
+	
+	public EleitorService getEleitorService() {
+		return new EleitorService();
+	}
 }

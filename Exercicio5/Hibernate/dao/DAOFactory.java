@@ -21,4 +21,8 @@ public class DAOFactory {
 	public CandidatoDAO getCandidatoDAO() {
 		return new CandidatoDAO();
 	}
+
+	public EleitorDAO getEleitorDAO() {
+		return new EleitorDAO();
+	}
 }

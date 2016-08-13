@@ -15,7 +15,8 @@
 <body>
 	<c:url var="inicio" value="/" />
 	<c:url var="registrar_candidato" value="Cadastro_Candidato.jsp" />
-	<c:url var="cargos" value="ListarCargos.action"/>
+	<c:url var="cargos" value="Cargos.jsp"/>
+	<c:url var="votar" value="Votar.jsp" />
 
 	<h1 align="center">Exercício Softblue: Hibernate</h1>
 
@@ -27,6 +28,9 @@
 	<br>
 	<br>
 	<a href="${registrar_candidato}">Registrar Candidato</a>
+	<div align="right">
+		<a href="${votar}">Votar</a>
+	</div>
 	<br>
 	<br>
 

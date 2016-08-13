@@ -2,8 +2,6 @@ package action;
 
 import java.util.List;
 
-import javax.servlet.http.HttpSession;
-
 import entity.Cargo;
 import service.ServiceException;
 
@@ -14,12 +12,7 @@ public class ListarCargosAction extends Action {
 		try {
 			List<Cargo> list = serviceFactory.getCargoService().getCargos();
 			
-			
-			HttpSession session = getRequest().getSession();
-			
-			session.setAttribute("cargos", list);
-			
-			forward("Cargos.jsp");
+			getRequest().getSession().setAttribute("cargos", list);
 			
 		} catch (ServiceException e) {
 			e.printStackTrace();
